@@ -9,4 +9,9 @@ const findAllUsers = async(_, res) => {
     res.json(await userService.findAllUsers());
 }
 
-module.exports = { createUser , findAllUsers}
+const addVideoId = async (req, res) => {
+    res.json(await userService.addVideoId(req.body));
+}
+
+
+module.exports = { createUser , findAllUsers, addVideoId}

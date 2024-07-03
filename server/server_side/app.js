@@ -28,6 +28,7 @@ app.use(express.static('public'));
 app.use(express.json());
 
 const users = require('./routes/user');
+const videos = require('./routes/video');
 app.use('/users', users);
-
+app.use('/videos', videos)
 app.listen(process.env.PORT);

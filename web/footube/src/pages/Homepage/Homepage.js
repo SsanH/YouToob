@@ -1,6 +1,5 @@
 import VideoItem from "./videoItem/VideoItem";
 import './Homepage.css'
-import videos from '../../data/vid.json'
 import SearchBar from './searchBar/SearchBar';
 import SideBar from "./sideBar/SideBar";
 import React, {useState} from 'react'

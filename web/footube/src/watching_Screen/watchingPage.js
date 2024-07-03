@@ -12,13 +12,12 @@ import SearchBar from '../pages/Homepage/searchBar/SearchBar';
 function Watch({ setCurrentVideos, videoDataList, userDataList, loggedUser, setLoggedUser }) {
   const { vid_id } = useParams();  // Extract vid_id from useParams
   const intId = parseInt(vid_id, 10);
-
+  
   const [commentList, setCommentList] = useState(commentsDataList);
-
+  
   let currentVideoFromVideoList = videoDataList.find(video => video.id === intId);
   let currentUser = userDataList[0];
-  
-
+ 
   const [likesData, setLikesData] = useState({});
 
   // Set initial likes data for the current video if not already set
@@ -34,8 +33,8 @@ function Watch({ setCurrentVideos, videoDataList, userDataList, loggedUser, setL
       }));
     }
   }, [intId, currentVideoFromVideoList.likes, likesData]);
-  
 
+  
   return (
     <div className="container_watchingPage">
 
@@ -53,8 +52,8 @@ function Watch({ setCurrentVideos, videoDataList, userDataList, loggedUser, setL
               <h4>{currentVideoFromVideoList.title}</h4>
             </div>
             <LikesHandler
-              userName={currentUser.displayName}
-              userImg={currentUser.userImgFile}
+              userName={currentVideoFromVideoList.artist}
+              userImg={currentVideoFromVideoList.img}
               vidLikes={currentVideoFromVideoList.likes}
               likesData={likesData}
               setLikesData={setLikesData}

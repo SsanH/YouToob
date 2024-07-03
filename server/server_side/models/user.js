@@ -7,7 +7,8 @@ const User = new Schema({
     userName: String,
     userPassword: String,
     displayName: String,
-    userImgFile: String
+    userImgFile: String,
+    uploadedVids: [Number]
 });
 
     module.exports = mongoose.model('Users', User);

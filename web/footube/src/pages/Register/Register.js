@@ -28,7 +28,8 @@ function Register({ users, setUsers}) {
         password: '',
         confirmPassword: '',
         imageFile: null,
-        imagePreview: null
+        imagePreview: null,
+        uploadedVids: []
     });
     const [errors, setErrors] = useState({}); //errors state
     const [successMessage, setSuccessMessage] = useState('');

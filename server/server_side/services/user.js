@@ -7,7 +7,8 @@ const createUser = async (newUser) => {
          userName: newUser.userName,
          userPassword: newUser.userPassword, 
          displayName: newUser.displayName,
-         userImgFile: newUser.userImgFile
+         userImgFile: newUser.userImgFile,
+         uploadedVids: []
     });
 
     userSaved = await user.save()
@@ -20,14 +21,14 @@ const findAllUsers = async() => {
     return users;
 }
 
-module.exports = { createUser , findAllUsers}
+const addVideoId = async (userId) => {
 
-// const userCount = async() => {
-//     const len = await User.find();
-//     console.log(len);
-// }
+    const user = await Users.findOneAndUpdate(
+        { userId: userId.user_id },
+        { $push: { uploadedVids: userId.id } },
+        { new: true }
+    );
+    return user;
+};
 
-// async function userCount() {
-//     const usersArr = await User.find();
-//     console.log(usersArr)
-// }
+module.exports = { createUser , findAllUsers, addVideoId}

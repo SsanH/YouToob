@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+bodyUserProfile {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+bodyUserProfile * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* header */
+
+.material-icons {
+  color: rgb(96, 96, 96);
+}
+
+/* .headerUserProfile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 15px;
+  background-color: white;
+} */
+
+/* .header__leftUserProfile {
+  display: flex;
+  align-items: center;
+}
+
+.header__leftUserProfile img {
+  width: 100px;
+  margin-left: 0.5rem;
+  /* Changed */
+ /*}*/
+
+/* .headerUserProfile i {
+  padding: 0 7px;
+  cursor: pointer;
+} */
+/*
+.header__searchUserProfile form {
+  border: 1px solid #ddd;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header__searchUserProfile input {
+  width: 500px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  height: 100%;
+}
+
+.header__searchUserProfile button {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+} */
+
+/* Sidebar */
+.mainBodyUserProfile {
+  height: calc(100vh - 70px);
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebarUserProfile {
+  height: 100%;
+  width: 230px;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.sidebar__categoriesUserProfile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.sidebar__categoryUserProfile {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+}
+
+.sidebar__categoryUserProfile span {
+  margin-left: 15px;
+}
+
+.sidebar__categoryUserProfile:hover {
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+.sidebarUserProfile::-webkit-scrollbar {
+  display: none;
+}
+
+hr {
+  height: 1px;
+  background-color: #e5e5e5;
+  border: none;
+}
+
+/* videos */
+
+.videosUserProfile {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px;
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
+}
+
+.videos__containerUserProfile {
+    display: flex;
+    flex-direction: column; /* Ensures content is stacked vertically */
+    align-items: center; /* Center-aligns the child content */
+    width: 100%; /* Takes full width to align children properly */
+    padding: 20px;
+    background-color: #fff; /* Background color for contrast */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+}
+
+.userProfileInfo_UserProfile {
+    width: 100%; /* Full width to maintain alignment */
+    padding: 10px 0; /* Padding for visual spacing */
+    border-bottom: 2px solid #f0f0f0; /* Visual separation from videos */
+    margin-bottom: 20px; /* Space between profile info and videos */
+}
+
+.userVideos_UserProfile {
+    width: 100%; /* Full width */
+}
+
+
+.videoUserProfile {
+  width: 310px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.video__thumbnailUserProfile {
+  width: 100%;
+  height: 170px;
+  position: relative;
+}
+
+.video__thumbnailUserProfile button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 170px;
+}
+
+.video__thumbnailUserProfile img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.authorUserProfile img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.video__detailsUserProfile {
+  display: flex;
+  margin-top: 10px;
+}
+
+.titleUserProfile {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleUserProfile h3 {
+  color: rgb(3, 3, 3);
+  line-height: 18px;
+  font-size: 14px;
+  margin-bottom: 6px;
+
+}
+
+.titleUserProfile a,
+span {
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(3, 3, 3);
+}
+
+
+.header__iconsUserProfile {
+  display: flex;
+  align-items: center;
+  /* Vertically center */
+  justify-content: center;
+  /* Horizontally center (optional) */
+}
+
+
+.header__iconsUserProfile button {
+  text-align: center;
+  padding: 0px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+
+@media (max-width: 425px) {
+  .header__searchUserProfile {
+    display: none;
+  }
+
+  .header__iconsUserProfile .material-icons {
+    display: none;
+  }
+
+  .header__iconsUserProfile .display-this {
+    display: inline;
+  }
+
+  .sidebarUserProfile {
+    display: none;
+  }
+}
+
+
+
+.videos__containerUserProfile {
+    background-color: #fff; /* Background color */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds shadow for better layering */
+}
+
+.userProfileInfo_UserProfile p {
+    margin-bottom: 0.5em;
+    color: #333;
+    font-size: 16px;
+}
+
+.userVideos_UserProfile {
+    margin-top: 20px; /* Adds space between user info and videos list */
+}
+
+.userVideos_UserProfile h2 {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.userVideos_UserProfile p {
+    font-style: italic;
+}
+
+
+#youtubeLogo {
+  width: 34px;
+  height: 34px;
+  background-image: url('../Homepage/footubelogo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .header__searchUserProfile {
+    display: none;
+  }
+
+  .sidebarUserProfile {
+    display: none;
+  }
+
+  .show-sidebarUserProfile {
+    display: inline;
+    position: fixed;
+    top: 4.4rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 941px) {
+  .header__searchUserProfile input {
+    width: 300px;
+  }
+}
