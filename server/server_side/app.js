@@ -7,7 +7,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 const cors = require('cors');
 app.use(cors());
 
-
 const customEnv = require('custom-env')
 customEnv.env(process.env.NODE_ENV, './config');
 console.log(process.env.CONNECTION_STRING);
@@ -22,13 +21,15 @@ mongoose.connect(process.env.CONNECTION_STRING,
     }
 );
 
-
 app.use(express.static('public'));
 
 app.use(express.json());
 
 const users = require('./routes/user');
 const videos = require('./routes/video');
+const comments = require('./routes/comment');
+
+app.use('/comments', comments)
 app.use('/users', users);
 app.use('/videos', videos)
 app.listen(process.env.PORT);

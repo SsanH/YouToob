@@ -9,12 +9,42 @@ import commentsDataList from '../data/comments.json';
 import LikesHandler from './like-toolbar/likesHandler';
 import SearchBar from '../pages/Homepage/searchBar/SearchBar';
 
+
+const getComments = async () => {
+  try {
+    const response = await fetch('http://localhost:12345/comments/', {
+      method: 'GET', 
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const comments = await response.json();
+    return comments;
+  } catch (error) {
+    console.error('Failed to fetch videos:', error);
+  }
+};
+
 function Watch({ setCurrentVideos, videoDataList, userDataList, loggedUser, setLoggedUser }) {
   const { vid_id } = useParams();  // Extract vid_id from useParams
   const intId = parseInt(vid_id, 10);
   
-  const [commentList, setCommentList] = useState(commentsDataList);
-  
+  const [commentList, setCommentList] = useState([]);
+
+  useEffect(() => {
+    console.log("comment function called");
+    const comments = async () => {
+      const comments = await getComments();
+      console.log(comments);
+      setCommentList(comments);
+    };
+    comments();
+  }, []);
+
+
   let currentVideoFromVideoList = videoDataList.find(video => video.id === intId);
   let currentUser = userDataList[0];
  
