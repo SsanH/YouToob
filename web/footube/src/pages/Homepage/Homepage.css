@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+body_Homepage {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+body_Homepage * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* header */
+
+.material-icons {
+  color: rgb(96, 96, 96);
+}
+
+/* .header_Homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 15px;
+  background-color: white;
+} */
+
+/* .header__left_Homepage {
+  display: flex;
+  align-items: center;
+}
+
+.header__left_Homepage img {
+  width: 100px;
+  margin-left: 0.5rem;
+  /* Changed */
+ /*}*/
+
+/* .header_Homepage i {
+  padding: 0 7px;
+  cursor: pointer;
+} */
+/*
+.header__search_Homepage form {
+  border: 1px solid #ddd;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header__search_Homepage input {
+  width: 500px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  height: 100%;
+}
+
+.header__search_Homepage button {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+} */
+
+/* Sidebar */
+.mainBody_Homepage {
+  height: calc(100vh - 70px);
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar_Homepage {
+  height: 100%;
+  width: 230px;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.sidebar__categories_Homepage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.sidebar__category_Homepage {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+}
+
+.sidebar__category_Homepage span {
+  margin-left: 15px;
+}
+
+.sidebar__category_Homepage:hover {
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+.sidebar_Homepage::-webkit-scrollbar {
+  display: none;
+}
+
+hr {
+  height: 1px;
+  background-color: #e5e5e5;
+  border: none;
+}
+
+/* videos */
+
+.videos_Homepage {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px;
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
+}
+
+.videos__container_Homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: white;
+  padding-left: 50px;
+}
+
+.video_Homepage {
+  width: 310px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.video__thumbnail_Homepage {
+  width: 100%;
+  height: 170px;
+  position: relative;
+}
+
+.video__thumbnail_Homepage button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 170px;
+}
+
+.video__thumbnail_Homepage img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.author_Homepage img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.video__details_Homepage {
+  display: flex;
+  margin-top: 10px;
+}
+
+.title_Homepage {
+  display: flex;
+  flex-direction: column;
+}
+
+.title_Homepage h3 {
+  color: rgb(3, 3, 3);
+  line-height: 18px;
+  font-size: 14px;
+  margin-bottom: 6px;
+
+}
+
+.title_Homepage a,
+span {
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(3, 3, 3);
+}
+
+
+.header__icons_Homepage {
+  display: flex;
+  align-items: center;
+  /* Vertically center */
+  justify-content: center;
+  /* Horizontally center (optional) */
+}
+
+
+.header__icons_Homepage button {
+  text-align: center;
+  padding: 0px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+
+@media (max-width: 425px) {
+  .header__search_Homepage {
+    display: none;
+  }
+
+  .header__icons_Homepage .material-icons {
+    display: none;
+  }
+
+  .header__icons_Homepage .display-this {
+    display: inline;
+  }
+
+  .sidebar_Homepage {
+    display: none;
+  }
+}
+
+
+
+/* .video_click_button_Homepage{
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+} */
+
+
+#youtubeLogo {
+  width: 34px;
+  height: 34px;
+  background-image: url('./footubelogo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .header__search_Homepage {
+    display: none;
+  }
+
+  .sidebar_Homepage {
+    display: none;
+  }
+
+  .show-sidebar_Homepage {
+    display: inline;
+    position: fixed;
+    top: 4.4rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 941px) {
+  .header__search_Homepage input {
+    width: 300px;
+  }
+}

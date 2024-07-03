@@ -1,0 +1,62 @@
+/* Common styles */
+.p {
+    font-size: 12px;
+    color: hwb(0 75% 20%);
+}
+
+
+
+.user-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: hsl(0, 0%, 20%);
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.other-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.like {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 0px;
+}
+
+.dislike {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 0px;
+}
+
+.right-content {
+    flex-grow: 0;
+    padding-left: 5px;
+}
+
+.comment-block {
+    margin: 3px;
+    display: inline-flex;
+}
+
+.comment-text {
+
+    width: fit-content;
+    text-align: left;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    flex-direction: column;
+}

@@ -1,0 +1,25 @@
+.form-inline{
+display: flex;
+flex-direction: row;
+margin-left: 160px;
+width : 500px;
+}
+.navbar-brand{
+    margin-left : 20px;
+}
+.d-flex{
+margin-right:200px;
+width:150px;
+}
+#sidenav{
+width: 500px;
+height: 20px;
+}
+#search{
+width : 600px;
+margin-left: 30px;
+margin-right: 430px;
+}
+.navbar-toggler-icon{
+  height:fit-content;
+}

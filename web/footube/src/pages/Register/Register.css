@@ -1,0 +1,54 @@
+.main-div{
+    margin-top: 50px;
+    margin-left: 450px;
+}
+
+
+.sign-up-field{
+    padding: 10px;
+}
+
+.sign-in-btn{
+    margin-left: 200px;
+    width: 200px;    
+}
+
+.frame {
+    border: 2px solid #007bff;
+    padding: 20px;
+    margin-right: 400px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.card{
+    border: 2px solid #ff00eee7;
+    margin-bottom: 10px;
+    margin-right: 650px;
+    margin-left: 200px;
+}
+.card-body{
+    margin-left: 55px;
+    font-weight: bold;
+    color: darkmagenta;
+}
+
+
+.preview {
+    margin-top: 10px;
+}
+
+.img-preview {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.login-page-link{
+    position: absolute; /* Use absolute positioning */
+    top: 60px; 
+    left: 390px; 
+}
+

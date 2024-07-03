@@ -1,0 +1,39 @@
+.login-card {
+    border-color: rgb(249, 248, 248);
+    border-style: solid;
+    background-color: #cbc6c0;
+    width: 380px;
+    padding: 20px;
+    box-shadow: 0 12px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  .login-title {
+    margin-bottom: 20px;
+  }
+
+  .login-button{
+    background-color: rgb(134, 193, 197);
+    margin-left: 140px; 
+    margin-top: 20px;
+    border-color: rgb(134, 193, 197);
+  }
+
+  .not-registered{
+   margin-top: 10px;
+   margin-left: 120px; 
+   font-size: 15px;
+  }
+
+  .registerButton{
+      background-color: rgb(134, 193, 197);
+      color:white;
+      border-color: rgb(134, 193, 197);
+  }
+
+  .cr-acc{
+   margin-left: 100px;
+  }
+
+
+  

@@ -1,0 +1,64 @@
+/* Common styles */
+.p {
+    font-size: 12px;
+    color: hwb(0 75% 20%);
+}
+
+.h1 {
+    font-size: 18px;
+    font-weight: unset;
+}
+
+.user-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: hsl(0, 0%, 20%);
+}
+
+.other-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.like {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 0px;
+}
+
+.dislike {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 0px;
+}
+
+.right-content {
+    flex-grow: 0;
+    padding-left: 5px;
+}
+
+.comment-block {
+    margin: 10px 0;
+    /* Adjust margin for spacing between comments */
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the top */
+}
+
+.comment-text {
+    margin-left: 10px;
+    /* Add margin between user image/name and comment text */
+    color: black;
+}
+
+.container {
+    width: 100%;
+    flex-direction: column;
+}
+

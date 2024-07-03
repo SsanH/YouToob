@@ -1,0 +1,26 @@
+.video_detail > div{
+    font-size: 10px;
+    flex-direction: row;
+}
+.card{
+    border: none;
+}
+.card-text{
+    text-align: center;
+}
+.card-footer {
+    background-color:white;
+    color : white;
+}
+.card-img-top {
+    width: 350px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .video{
+    width: 350px;
+    height: 50px;
+  }
+  .card{
+    border: none;
+}
