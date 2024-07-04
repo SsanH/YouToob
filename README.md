@@ -5,7 +5,7 @@ first run the server by navigating into "server side" directory and running "npm
 
 secondly run the client side by navigating into "footube" directory and running "npm start" from terminal
 
-you may have no install express, cons, express, custom-env, jsonwebtoken, cors, mongoose and body-parser
+you may have no install express, cons, express, custom-env, jsonwebtoken, cors, mongoose, multer and body-parser
 
 install what is needed by running 
 npm install "A"
