@@ -9,7 +9,7 @@ import UserProfile from './pages/UserProfile/UserProfile.js'
 
 const findAllUsers = async () => {
   try {
-    const response = await fetch('http://localhost:12345/users/find', {
+    const response = await fetch('http://localhost:12345/users', {
       method: 'GET', 
       headers: {
         'Content-Type': 'application/json'

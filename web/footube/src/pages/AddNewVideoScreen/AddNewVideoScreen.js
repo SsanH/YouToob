@@ -4,29 +4,8 @@ import './AddNewVideoScreen.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 
-// async function addNewVideo(uploadedVideo) {
-//   console.log(uploadedVideo)
-//   const response = await fetch('http://localhost:12345/videos/', {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify( uploadedVideo )
-//   });
-
-//   if (response.ok) {
-//     const newVideo = await response.json();
-//     console.log('new video added:', newVideo);
-//   } else {
-//     console.error('Failed to add user', await response.json());
-//   }
-// }
-
 async function addIdToUser(uploadVideo) {
-  console.log("ADD IT TO USER FUNCTION STARTED");
-  console.log(uploadVideo);
   const sendData = { id: uploadVideo.id, user_id: uploadVideo.user_id }
-  console.log(sendData);
   const response2 = await fetch('http://localhost:12345/users/addId', {
     method: 'POST',
     headers: {
