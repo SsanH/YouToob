@@ -7,9 +7,6 @@ const findAllVideos = async() => {
 }
 
 const removeVideo = async(videoId) => {
-    // console.log(videoId);
-    // const video = await Video.find({id: videoId});
-    // video.delete();
     return await Video.deleteOne({id: videoId});
 }
 
