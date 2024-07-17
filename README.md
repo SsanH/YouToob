@@ -1,6 +1,8 @@
 make sure you have mongoDB installed and it is running in the background.
 requests to server will be run on port:12345
 
+
+
 first run the server by navigating into "server side" directory and running "npm start" from terminal
 
 secondly run the client side by navigating into "footube" directory and running "npm start" from terminal
