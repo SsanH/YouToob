@@ -11,11 +11,11 @@ secondly, open Android Studio and run an emulator or on your Android phone the
 the Homepage screen:
 will display videos and entering those videos will navigate you to watching them on the watching page, and there's a login button which will navigate you to the login screens.
 if you are logged in it will display your name and profile picture on the top right corner and if you press on your profile picture icon you will be navigated to UserProfile page, also there will be a "add new video" where it will navigate you to uploading a new video to the youtube page.
+![Image 1](images/Homepage.png)
 
 
 the Login screen:
 will display a friendly interface that will have you entering your registered username and password and if correct you will be logged in and navigated back to Homepage, if you are not registered there is a "register" button that will take you to the register screen where easy to understand interface will navigate you to creating your first account.
-![Image 1](images/Homepage)
 
 
 the Register screen:
