@@ -9,9 +9,14 @@ secondly, open Android Studio and run an emulator or on your Android phone the
 
 
 the Homepage screen:
-will display videos and entering those videos will navigate you to watching them on the watching page, and there's a login button which will navigate you to the login screens.
-if you are logged in it will display your name and profile picture on the top right corner and if you press on your profile picture icon you will be navigated to UserProfile page, also there will be a "add new video" where it will navigate you to uploading a new video to the youtube page.
-![Image 1](images/Homepage.png)
+will display videos and entering those videos will navigate you to watching them on the watching page, 
+and there's a login button which will navigate you to the login screens.
+if you are logged in it will display your name and profile picture on the top right corner 
+and if you press on your profile picture icon you will be navigated to UserProfile page,
+also there will be a "add new video" where it will navigate you to uploading a new video to the youtube page.
+
+<img src="images/Homepage.png" alt="Description of Image" width="300" height="200">
+
 
 
 the Login screen:
@@ -29,4 +34,7 @@ simple form navigating you to upload a video on to youtube.
 
 the Watching screen:
 where you can watch the video you have chosen to see and also see the comments of this video, while other videos are being recommanded to you. 
+
+
+![Image 1](images/Homepage.png)
 
