@@ -1,0 +1,18 @@
+[
+  {
+    "userId": 1,
+    "userName": "Chad",
+    "userPassword": "Aa123456",
+    "displayName": "Chad",
+    "userImgFile": "/images/users-images/chadLogo.jpg",
+    "uploadedVids": [1, 2, 4, 5, 7, 8, 10]
+  },
+  {
+    "userId": 2,
+    "userName": "Srutonim",
+    "userPassword": "Zx123456",
+    "displayName": "Srutonim",
+    "userImgFile": "/images/users-images/srutonimLogo.jpg",
+    "uploadedVids": [3, 6, 9]
+  }
+]

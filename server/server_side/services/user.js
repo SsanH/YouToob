@@ -18,6 +18,7 @@ const createUser = async (newUser) => {
 
 const findAllUsers = async() => {
     const users = await Users.find();
+
     return users;
 }
 

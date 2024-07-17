@@ -28,6 +28,29 @@ const upload = multer({
     }
 });
 
+
+const storageAndroid = multer.diskStorage({
+    destination: function (req, file, cb) {
+        // Correct the path according to where you want to store your files
+        const targetPath = path.join(__dirname, '../../../ProjectAndroidVersion-master/app/src/main/res/raw');
+        cb(null, targetPath);
+    },
+    filename: function (req, file, cb) {
+        cb(null, Date.now() + path.extname(file.originalname)); // Append extension
+    }
+});
+
+
+const uploadAndroid = multer({
+    storageAndroid: storageAndroid,
+    limits: {
+        fieldNameSize: 100, // Max field name size
+        fieldSize: 16 * 1024 * 1024 // Max field value size (2 MB in this example)
+    }
+})
+
+router.post('/upload', uploadAndroid.single('video_src'), videoController.addVideo);
+
 router.post('/', upload.single('video_src'), videoController.addVideo);
 
 module.exports = router;
