@@ -15,7 +15,7 @@ if you are logged in it will display your name and profile picture on the top ri
 and if you press on your profile picture icon you will be navigated to UserProfile page,
 also there will be a "add new video" where it will navigate you to uploading a new video to the youtube page.
 
-<img src="images/Homepage.png" alt="Description of Image" width="250" height="500">
+<img src="images/Homepage.png" alt="Description of Image" width="200" height="400">
 
 
 
